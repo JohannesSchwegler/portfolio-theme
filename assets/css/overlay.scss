@@ -1,0 +1,25 @@
+@import "./colors";
+
+.page__transition{
+position: fixed;
+transform: translateY(100%);
+top:0;
+left: 0;
+height: 100vh;
+width: 100vw;
+background: #000;
+z-index:111;
+display:flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.page__logo{
+    width:75px;
+    height: 75px;
+    position: fixed;
+    svg{
+        fill:$third;
+    }
+}

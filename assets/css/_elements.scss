@@ -1,0 +1,136 @@
+@import "./colors";
+
+html {
+  height: 100%;
+}
+body {
+  position: relative;
+  min-height: 100%;
+}
+
+.main-footer {
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  z-index: -1;
+}
+
+//header
+.js__mainheader {
+  //color: $first;
+  font-size: 75px;
+  color: $first;
+  line-height: 1.2;
+  font-weight: 300;
+  margin: 0 0 10px;
+  overflow: hidden;
+  & > span {
+    position: relative;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 60px;
+  }
+}
+
+.js__mainheader--second {
+  //color: $first;
+  font-size: 75px;
+  color: $second;
+  line-height: 1;
+  font-weight: 300;
+  @media screen and (max-width: 768px) {
+    font-size: 60px;
+  }
+}
+.js__subheader {
+  //color: $first;
+  font-size: 20px;
+  color: $third;
+  line-height: 1;
+  font-weight: 300;
+
+  margin: 0 0 10px;
+}
+
+.js__text {
+  font-size: 20px;
+  color: $second;
+}
+
+.js__subtext {
+  color: $first;
+  font-size: 16px;
+}
+
+.js {
+  &__container {
+    max-width: 1024px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 768px) {
+      padding: 0 50px;
+    }
+  }
+  &__section {
+    padding: 150px 0;
+    @media screen and (max-width: 768px) {
+      padding: 90px 0;
+    }
+  }
+
+  &__header {
+    font-size: 32px;
+    color: $first;
+    display: flex;
+    align-items: center;
+    margin: 0 0 25px;
+    font-weight: 400;
+
+    @media screen and (max-width: 768px) {
+      font-size: 28px;
+    }
+    &::before {
+      content: "01.";
+      color: $third;
+      margin-right: 5px;
+      font-family: $font-main;
+      position: relative;
+      top: -3.5px;
+    }
+    &::after {
+      content: "";
+      width: 280px;
+      height: 1px;
+      display: block;
+      background: $second;
+      position: relative;
+      margin-left: 20px;
+      @media screen and (max-width: 768px) {
+        width: unset;
+        flex: 1;
+      }
+    }
+  }
+
+  &__button {
+    font-family: $font-main;
+    color: $third;
+    background-color: transparent;
+    font-size: 14px;
+    line-height: 1;
+    cursor: pointer;
+    margin-top: 40px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: $third;
+    border-radius: 3px;
+    padding: 1.25rem 1.75rem;
+    text-decoration: none;
+
+    a {
+      color: $third;
+      text-decoration: none;
+    }
+  }
+}

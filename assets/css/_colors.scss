@@ -1,0 +1,41 @@
+$first: rgb(33, 37, 41);
+$second: #b1b1b1;
+$third: rgb(33, 37, 41);
+$forth: #ffffff;
+$fifth: rgb(96, 106, 134);
+$sixth: #d1d1d1;
+
+body {
+  color: $first !important;
+}
+/*
+$first: #000000;
+$second: rgb(75, 75, 75);
+$third: rgb(126, 109, 16);
+$forth: #ffffff;
+$fifth: rgb(122, 122, 122);
+$sixth: rgb(23, 42, 69);
+
+*/
+/*
+
+$first: #ccd6f6;
+$second: rgb(136, 146, 176);
+$third: rgb(100, 255, 218);
+$forth: #0a192f;
+$fifth: rgb(96, 106, 134);
+$sixth: rgb(23, 42, 69);
+
+*/
+
+.post {
+  color: #fff;
+  &__title {
+  }
+
+  &__link {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+  }
+}
